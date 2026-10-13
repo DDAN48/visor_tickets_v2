@@ -1,0 +1,1192 @@
+:root{--bg:#f4f7fb;--card:#fff;--line:#d9e2ec;--text:#17263a;--muted:#718097;--primary:#087b63;--blue:#2366d1;--green:#007d51;--green-bg:#c6efce;--yellow:#8a6400;--yellow-bg:#ffeb9c;--red:#9c0006;--red-bg:#ffc7ce;--purple:#6c55ff}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}button,input,textarea{font:inherit}.hidden{display:none!important}.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 18px;background:#111827;color:#fff;position:sticky;top:0;z-index:500}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:42px;height:42px;border-radius:10px;background:#0ba77a;display:grid;place-items:center;font-weight:950}.brand h1{font-size:19px;margin:0}.subtitle,.muted,.last-update{color:#8391a6;font-size:12px}.topbar .subtitle,.topbar .last-update{color:#c8d0dc}.top-actions{display:flex;align-items:center;gap:12px}main{padding:14px;max-width:2000px;margin:auto}.card{background:var(--card);border:1px solid var(--line);border-radius:12px}.tabs{display:flex;gap:7px}.main-tabs{padding:9px 14px;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:70px;z-index:450}.tab,.subtab{border:0;border-radius:7px;padding:9px 16px;font-weight:850;background:#eaf0f6;color:#3e4f66;cursor:pointer}.tab.active,.subtab.active{background:var(--primary);color:#fff}.view{display:none}.view.active{display:block}.sub-tabs{margin:11px 0}.subview{display:none}.subview.active{display:block}.toolbar{padding:13px}.toolbar-grid{display:grid;grid-template-columns:minmax(220px,1.5fr) repeat(6,minmax(135px,1fr)) 145px 145px;gap:8px;align-items:end}.toolbar-grid label,.field{display:flex;flex-direction:column;gap:4px;font-size:11px;font-weight:850;color:#64748b}.toolbar-grid input,.inline-search{height:38px;border:1px solid #cbd5e1;border-radius:7px;padding:0 9px;background:#fff;color:#22344a}.toolbar-actions{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}.btn{border:0;border-radius:7px;padding:9px 13px;background:#eaf0f6;color:#34465d;font-weight:850;cursor:pointer}.btn.primary{background:var(--blue);color:#fff}.btn.ghost{background:#eef2f6}.btn.small{padding:7px 10px;font-size:11px}.btn:disabled{opacity:.5;cursor:default}.btn:hover:not(:disabled){filter:brightness(.97);box-shadow:0 2px 8px rgba(15,23,42,.10)}.btn:active:not(:disabled),.btn.pressed{transform:translateY(1px) scale(.985);box-shadow:inset 0 1px 3px rgba(15,23,42,.18)}.btn[aria-pressed="true"]{background:#d9e8ff;color:#174f9f;box-shadow:inset 0 0 0 1px #8bb7ef}.kpi-strip{display:grid;grid-template-columns:repeat(10,minmax(105px,1fr));gap:5px;padding:9px 0 4px;overflow:visible}.kpi{flex:1 0 105px;background:#fff;border:1px solid var(--line);border-radius:7px;padding:5px 7px;min-height:43px}.kpi .l{font-size:8px;text-transform:uppercase;color:#66758a;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.kpi .v{font-size:15px;font-weight:950;margin-top:2px}.kpi.age-red{background:var(--red-bg)}.kpi.age-yellow{background:var(--yellow-bg)}.kpi.capa-fibra{background:#ffe69a}.kpi.capa-usac{background:#d8efd0}.kpi.capa-infra{background:#ffc2ca}.kpi.capa-edificio{background:#d9eafa}.daily-state-panel{margin-top:8px;overflow:visible}.daily-state-panel>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 13px;font-size:12px;font-weight:900;color:#34465d;user-select:none}.daily-state-panel>summary::-webkit-details-marker{display:none}.daily-state-panel>summary::after{content:"▾";font-size:12px;color:#718097;transition:.15s}.daily-state-panel[open]>summary::after{transform:rotate(180deg)}.daily-state-body{border-top:1px solid var(--line);padding:10px 12px 12px}.daily-state-note{font-size:10px;color:#718097;margin-bottom:8px}.daily-state-table-wrap{overflow:auto}.daily-state-table{width:100%;border-collapse:separate;border-spacing:0;min-width:430px}.daily-state-table th{position:static;background:#1a2430;color:#fff;padding:7px 10px;font-size:9px;text-transform:uppercase}.daily-state-table td{padding:7px 10px;font-size:11px;border-bottom:1px solid #e7ecf1}.daily-state-table td:first-child{font-weight:850}.daily-state-table .daily-num{text-align:center;font-size:14px;font-weight:950}.daily-state-table tr:last-child td{border-bottom:0}.daily-state-zero{color:#a0aaba}.map-details{margin-top:10px;overflow:visible}.map-details>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:10px 13px;font-size:12px;font-weight:900;color:#34465d}.map-details>summary::-webkit-details-marker{display:none}.map-details>summary::after{content:"▾";margin-left:8px;color:#718097}.map-details[open]>summary::after{transform:rotate(180deg)}.map-wrap{border-top:1px solid var(--line);padding:8px}.map-wrap #map{height:430px;border-radius:9px}.map-note{font-size:11px;color:#718097;padding:7px 2px 1px}.table-card{margin-top:10px;overflow:visible}.table-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}.table-head strong{font-size:15px}.table-head .muted{margin-left:9px}.head-actions,.pager{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.inline-search{width:300px}.table-scroll{overflow:auto;max-height:67vh;min-height:240px}.table-scroll table{width:100%;border-collapse:separate;border-spacing:0;min-width:1600px}thead{position:sticky;top:0;z-index:30}th{background:#121820;color:#fff;padding:8px 7px;font-size:10px;text-transform:uppercase;white-space:nowrap;border-right:1px solid #3a4149}td{padding:7px 8px;font-size:11px;white-space:nowrap;border-bottom:1px solid #e7ecf1;border-right:1px solid #edf1f5}tbody tr:hover td{background:#f8fbff}.column-filters th{background:#eaf0f5;padding:4px}.column-filters input{width:100%;height:28px;border:1px solid #cbd5e1;border-radius:5px;padding:0 5px;font-size:10px}.column-filters .multi>button{height:29px;padding:0 6px;font-size:9px;background:#fff}.column-filters .multi-panel{top:31px;width:310px}.excel-filter-btn{font-weight:750!important}.excel-panel .multi-tools{grid-template-columns:minmax(120px,1fr) auto auto}.task-link{color:#1557c8;text-decoration:underline;font-weight:900;cursor:pointer}.badge{display:inline-block;padding:4px 7px;border-radius:5px;font-weight:900;font-size:9px;background:#eceff3;color:#526173}.badge.started{background:#ffeba2;color:#815f00}.badge.suspended{background:#ffd7dc;color:#a12734}.badge.assigned{background:#dce9ff;color:#215cad}.badge.enroute{background:#d8eef7;color:#1c617a}.badge.scheduled{background:#eadcff;color:#64409b}.badge.completed{background:#d8f4e6;color:#00734a}.badge.cancelled{background:#ece7ff;color:#6038a8}.badge.warn{background:#fff0c2;color:#805f00}.badge.ok{background:#d8f4e6;color:#00734a}.age-cell{font-weight:900}.created-cell{font-weight:850}.created-green{background:#c6efce!important;color:#007d51}.created-yellow{background:#ffeb9c!important;color:#8a6400}.created-old{background:#f4c7ab!important;color:#7a3f19}.age-green{background:var(--green-bg)!important;color:var(--green)}.age-yellow{background:var(--yellow-bg)!important;color:var(--yellow)}.age-red{background:var(--red-bg)!important;color:var(--red)}.capa-cell.edificio{background:#d9eafa}.capa-cell.fibra{background:#ffe69a}.capa-cell.infra{background:#ffc2ca}.capa-cell.usac{background:#d8efd0}.capa-cell.ingress{background:#eadcff}.multi{position:relative}.multi>button{width:100%;height:38px;border:1px solid #cbd5e1;border-radius:7px;background:#fff;color:#26384d;text-align:left;padding:0 9px;font-size:11px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.multi-panel{position:absolute;z-index:2000;top:41px;left:0;width:300px;background:#fff;border:1px solid #cbd5e1;border-radius:9px;box-shadow:0 12px 32px rgba(0,0,0,.22);padding:8px}.multi-tools{display:grid;grid-template-columns:1fr auto auto;gap:5px;margin-bottom:6px}.multi-tools input{min-width:0;height:29px;border:1px solid #cbd5e1;border-radius:5px;padding:0 6px}.multi-tools button{border:0;border-radius:5px;padding:0 7px;font-size:9px;font-weight:850}.multi-list{max-height:270px;overflow:auto}.multi-option{display:grid;grid-template-columns:22px 1fr;align-items:center;gap:5px;padding:5px;font-size:11px;color:#26384d}.multi-option:hover{background:#f3f6f9;border-radius:5px}.multi-option input{width:15px;height:15px}.multi-empty,.empty{padding:18px;text-align:center;color:#7b8899}.column-chooser{position:relative}.column-chooser summary{list-style:none}.column-chooser summary::-webkit-details-marker{display:none}.column-chooser-panel{position:absolute;right:0;top:36px;z-index:1900;width:260px;max-height:440px;overflow:auto;background:#fff;border:1px solid #cbd5e1;border-radius:9px;box-shadow:0 10px 28px rgba(0,0,0,.22);padding:8px}.column-chooser-actions{display:flex;gap:5px;position:sticky;top:0;background:#fff;padding-bottom:6px}.column-chooser-panel label{display:flex;gap:8px;align-items:center;padding:5px;font-size:11px}.col-hidden{display:none!important}.drawer{position:fixed;inset:0;z-index:3000;pointer-events:none}.drawer.open{pointer-events:auto}.drawer-backdrop{position:absolute;inset:0;background:rgba(14,24,40,.48);opacity:0;transition:.18s}.drawer.open .drawer-backdrop{opacity:1}.drawer-panel{position:absolute;right:0;top:0;bottom:0;width:min(720px,95vw);background:#fff;transform:translateX(105%);transition:.2s;overflow:auto;box-shadow:-8px 0 35px rgba(0,0,0,.22)}.drawer.open .drawer-panel{transform:none}.drawer-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;padding:16px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:3}.drawer-head h2{margin:2px 0}.eyebrow{font-size:10px;text-transform:uppercase;color:#758399;font-weight:900}.drawer-body{padding:14px}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.detail-item{border:1px solid var(--line);border-radius:8px;padding:9px}.detail-item .k{font-size:9px;color:#768399;text-transform:uppercase;font-weight:900}.detail-item .v{font-size:12px;font-weight:800;margin-top:3px;word-break:break-word}.history-title{margin:18px 0 8px}.visit{border-left:3px solid #d5e0eb;padding:0 0 12px 12px}.visit-card{border:1px solid var(--line);border-radius:8px;padding:9px}.visit-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.visit-meta{font-size:11px;color:#607087;margin-top:5px}.visit-times{font-size:11px;margin-top:5px}.notes{white-space:pre-wrap;background:#f5f8fb;border-radius:6px;padding:8px;margin-top:7px;font-size:11px}.modal{position:fixed;inset:0;z-index:3500;background:rgba(14,24,40,.5);display:grid;place-items:center;padding:18px}.modal-card{width:min(760px,96vw);max-height:92vh;overflow:auto;background:#fff;border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.28)}.modal-head{display:flex;align-items:flex-start;justify-content:space-between;padding:15px 17px;border-bottom:1px solid var(--line)}.modal-head h2{margin:0}.settings-grid{display:grid;gap:12px;padding:16px}.settings-grid label{display:flex;flex-direction:column;gap:5px;font-size:11px;font-weight:900;color:#607087}.settings-grid textarea{min-height:72px;border:1px solid #cbd5e1;border-radius:7px;padding:8px}.settings-grid small{font-weight:500;color:#7b8899}.modal-actions{display:flex;justify-content:flex-end;gap:8px;padding:0 16px 16px}.loading-overlay{position:fixed;inset:0;z-index:5000;background:rgba(15,23,42,.35);display:grid;place-items:center}.loading-card{width:min(410px,90vw);background:#fff;border-radius:13px;padding:20px;box-shadow:0 18px 50px rgba(0,0,0,.25);display:grid;gap:8px;text-align:center}.spinner{width:34px;height:34px;margin:auto;border:4px solid #dbe4ec;border-top-color:var(--primary);border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.progress{height:7px;background:#e8eef4;border-radius:99px;overflow:hidden}.progress-bar{height:100%;width:0;background:var(--primary);transition:.15s}.toast{position:fixed;right:16px;bottom:16px;z-index:5200;background:#111827;color:#fff;padding:11px 14px;border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.25);max-width:min(520px,90vw);font-size:12px}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:10px}.stat{padding:12px}.stat span{font-size:10px;color:#718097;text-transform:uppercase;font-weight:900}.stat strong{display:block;font-size:20px;margin-top:3px}.history-grid{grid-template-columns:170px 170px 220px 220px}.num{text-align:center}
+@media(max-width:1500px){.toolbar-grid{grid-template-columns:repeat(4,minmax(150px,1fr))}.detail-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.topbar{position:static}.main-tabs{top:0}.toolbar-grid,.history-grid{grid-template-columns:1fr 1fr}.detail-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.inline-search{width:100%}.table-head{align-items:flex-start}.head-actions{width:100%}.drawer-panel{width:100%}}
+
+@media(max-width:1700px){.kpi-strip{grid-template-columns:repeat(8,minmax(105px,1fr))}}
+@media(max-width:1200px){.kpi-strip{grid-template-columns:repeat(5,minmax(105px,1fr))}}
+@media(max-width:700px){.kpi-strip{grid-template-columns:repeat(2,minmax(105px,1fr))}}
+
+/* V22.11: ventana operativa fija */
+.fixed-window{min-width:245px}
+.fixed-window-value{
+  min-height:38px;display:flex;align-items:center;padding:0 10px;
+  border:1px solid var(--border,#d7dee8);border-radius:8px;background:#f8fafc;
+  color:#334155;font-size:12px;font-weight:700;white-space:nowrap
+}
+
+/* V22.12: filtros grandes - checkbox primero y texto después */
+.multi-option{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:8px!important;text-align:left!important}.multi-option input[type=checkbox]{order:0!important;flex:0 0 15px!important;margin:0!important}.multi-option span{order:1!important;display:block!important;min-width:0!important;white-space:normal!important}.daily-state-note{display:none!important}
+
+/* V22.13 - cierre explícito de filtros y comparador Hoy/Ayer más legible */
+.multi-tools{grid-template-columns:minmax(120px,1fr) auto auto auto!important;align-items:center}
+.multi-tools .multi-close{width:28px;height:29px;padding:0!important;background:#eef2f6!important;color:#46566a!important;font-size:16px!important;line-height:1!important;border:1px solid #d7dee7!important}
+.multi-tools .multi-close:hover{background:#dde5ee!important;color:#172231!important}
+.excel-panel .multi-tools{grid-template-columns:minmax(120px,1fr) auto auto auto!important}
+.column-chooser-actions{align-items:center}
+.column-chooser-actions .chooser-close{margin-left:auto}
+.daily-state-body{padding:12px 14px 14px;background:#f8fafc}
+.daily-state-table-wrap{border:1px solid #dfe6ee;border-radius:10px;overflow:hidden;background:#fff}
+.daily-state-table{border-spacing:0;min-width:520px}
+.daily-state-table th{background:#162230;padding:9px 12px;font-size:10px;letter-spacing:.02em}
+.daily-state-table td{padding:10px 12px;font-size:12px;background:#fff;border-bottom:1px solid #e7edf3}
+.daily-state-table tbody tr:nth-child(even) td{background:#f8fafc}
+.daily-state-table .daily-num{font-size:17px;font-weight:950;font-variant-numeric:tabular-nums}
+.daily-state-table .daily-state-label{font-weight:900;color:#27384b}
+.daily-state-table .daily-completed-row td{background:#eaf7f1!important;border-bottom-color:#ccebdd}
+.daily-state-table .daily-completed-row .daily-state-label{color:#096b4c}
+.daily-state-table .daily-completed-row .daily-num{color:#096b4c}
+.daily-state-panel>summary small{font-weight:900;color:#576b84}
+
+/* V22.17 - UI operativa compacta */
+.topbar{min-height:58px;padding:8px 14px}.top-left{display:flex;align-items:center;gap:10px}.brand-mark{width:34px;height:34px;border-radius:8px;font-size:12px}.brand h1{font-size:17px}.top-actions{gap:8px}.load-status{font-size:11px;color:#91a0b4;max-width:360px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.last-update{font-size:11px;color:#d7dee8;white-space:nowrap}.top-icon-btn{width:36px;height:36px;border:0;border-radius:8px;background:#243247;color:#fff;font-size:20px;font-weight:900;display:grid;place-items:center;cursor:pointer}.top-icon-btn:hover{background:#31445f}.top-icon-btn.refresh{background:#2366d1}.top-icon-btn.info{font-size:18px}
+main{padding:10px 12px;max-width:none}.sticky-dashboard{position:sticky;top:58px;z-index:430;background:var(--bg);padding:6px 0 4px;box-shadow:0 5px 12px rgba(15,23,42,.05)}.compact-toolbar{padding:9px 10px}.toolbar-grid{grid-template-columns:minmax(220px,1.45fr) repeat(6,minmax(120px,1fr)) minmax(210px,1.1fr);gap:6px}.toolbar-grid input,.multi>button,.fixed-window-value{height:34px;min-height:34px}.toolbar-actions.icon-actions{margin-top:6px;gap:5px}.icon-action{width:32px;height:30px;border:1px solid #d5dee8;border-radius:7px;background:#fff;color:#34465d;font-weight:950;font-size:17px;display:grid;place-items:center;cursor:pointer;padding:0}.icon-action:hover{background:#eaf0f6}.icon-action[aria-pressed="true"]{background:#d9e8ff;color:#174f9f}.kpi-strip{padding:5px 0 2px;gap:4px}.kpi{min-height:39px;padding:4px 6px}.kpi .l{font-size:7.5px}.kpi .v{font-size:14px}.daily-state-panel{margin-top:7px}.map-details{margin-top:7px}.table-card{margin-top:7px}
+.side-backdrop{position:fixed;inset:58px 0 0 0;background:rgba(15,23,42,.34);z-index:455}.side-menu{position:fixed;left:0;top:58px;bottom:0;width:250px;background:#fff;z-index:460;transform:translateX(-105%);transition:transform .18s ease;box-shadow:8px 0 28px rgba(15,23,42,.18);border-right:1px solid var(--line)}.side-menu.open{transform:none}.side-menu-head{display:flex;align-items:center;justify-content:space-between;padding:14px;border-bottom:1px solid var(--line)}.side-close{width:30px;height:30px;border:0;border-radius:7px;background:#eef2f6;font-size:20px;cursor:pointer}.side-nav{padding:10px}.side-item{width:100%;display:flex;align-items:center;gap:9px;border:0;border-radius:8px;padding:11px 12px;background:#e8f5f1;color:#087b63;text-align:left;cursor:pointer}.side-coming{margin-top:12px;padding:10px;border-radius:8px;background:#f5f7fa;color:#8190a4;font-size:11px;line-height:1.45}.excel-btn{background:#e7f4ec;color:#087b52}.control-card{width:min(820px,96vw)}.control-body{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px}.control-section{border:1px solid var(--line);border-radius:10px;overflow:hidden}.control-section h3{margin:0;padding:10px 12px;background:#162230;color:#fff;font-size:13px}.control-row{display:grid;grid-template-columns:minmax(150px,.9fr) minmax(180px,1.4fr);gap:10px;padding:9px 11px;border-bottom:1px solid #e8edf3;align-items:start}.control-row:last-child{border-bottom:0}.control-row span{font-size:10px;text-transform:uppercase;color:#718097;font-weight:850}.control-row strong{font-size:11px;color:#24364b;word-break:break-word}.control-badge{display:inline-block;padding:3px 7px;border-radius:999px;background:#edf1f5;color:#58687c}.control-badge.ok{background:#d8f4e6;color:#00734a}.control-badge.warn{background:#fff0c2;color:#805f00}
+@media(max-width:1500px){.toolbar-grid{grid-template-columns:repeat(4,minmax(150px,1fr))}.load-status{display:none}}
+@media(max-width:800px){.topbar{position:sticky;top:0}.sticky-dashboard{top:58px}.toolbar-grid{grid-template-columns:1fr 1fr}.control-body{grid-template-columns:1fr}.last-update{display:none}.side-menu{width:min(82vw,280px)}}
+
+
+/* V22.21 - compactación visual, toolbar en una línea, KPI y paginado */
+.top-icon-btn svg,.icon-action svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.top-icon-btn{font-size:0}.top-icon-btn.info svg{width:19px;height:19px}.top-icon-btn.refresh svg{width:20px;height:20px}
+.toolbar-grid{grid-template-columns:minmax(205px,1.45fr) repeat(6,minmax(102px,.78fr)) minmax(205px,1.12fr) auto;gap:5px;align-items:end}
+.toolbar-inline-actions{display:flex;gap:4px;align-items:center;justify-content:flex-end;padding-bottom:2px;white-space:nowrap}
+.icon-action{width:30px;height:30px;border-radius:7px}.icon-action svg{width:16px;height:16px}
+.kpi-strip{grid-template-columns:repeat(14,minmax(78px,1fr));gap:4px;padding:4px 0 2px}
+.kpi{min-height:34px;padding:3px 6px;border-radius:6px}.kpi .l{font-size:8.3px;line-height:1.05}.kpi .v{font-size:16px;line-height:1.05;margin-top:2px}
+.table-head{padding:8px 12px;min-height:44px}.table-head strong{font-size:14px}.head-actions{gap:5px}
+.table-daily-state{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;margin:0}
+.table-daily-state>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;position:relative;min-height:34px;padding:6px 40px;color:#34465d;font-size:12px;font-weight:950;user-select:none}
+.table-daily-state>summary::-webkit-details-marker{display:none}.table-daily-state>summary::after{content:"▾";position:absolute;right:14px;color:#718097;transition:.15s}.table-daily-state[open]>summary::after{transform:rotate(180deg)}
+.table-daily-state .daily-state-body{border-top:1px solid var(--line);padding:8px 12px 10px;background:#f8fafc}
+.table-daily-state .daily-state-table-wrap{max-width:620px;margin:0 auto}
+.table-scroll{max-height:67vh}.table-footer{display:flex;justify-content:flex-end;align-items:center;padding:8px 12px;border-top:1px solid var(--line);background:#fff;position:sticky;bottom:0;z-index:35}
+.table-footer .pager{justify-content:flex-end}
+.export-capture-host{position:fixed;left:-10000px;top:0;width:1180px;background:#f4f7fb;padding:18px;z-index:-1;font-family:Arial,sans-serif;color:#17263a}
+.export-capture-card{background:#fff;border:1px solid #d9e2ec;border-radius:12px;padding:16px}.export-capture-title{font-size:22px;font-weight:800;margin-bottom:4px}.export-capture-sub{font-size:12px;color:#66758a;margin-bottom:12px}.export-capture-kpis{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.export-capture-kpi{border:1px solid #d9e2ec;border-radius:7px;padding:7px;background:#fff}.export-capture-kpi b{display:block;font-size:9px;text-transform:uppercase;color:#66758a}.export-capture-kpi strong{display:block;font-size:18px;margin-top:2px}.export-capture-daily{margin-top:12px;width:100%;border-collapse:collapse}.export-capture-daily th{background:#162230;color:#fff;padding:7px;font-size:10px}.export-capture-daily td{padding:7px;border:1px solid #e4e9ef;font-size:11px}.export-capture-daily td:not(:first-child){text-align:center;font-weight:800}
+@media(max-width:1700px){.kpi-strip{grid-template-columns:repeat(7,minmax(90px,1fr))}.toolbar-grid{grid-template-columns:repeat(4,minmax(145px,1fr))}.toolbar-inline-actions{justify-content:flex-start}.table-daily-state .daily-state-table-wrap{max-width:none}}
+@media(max-width:900px){.kpi-strip{grid-template-columns:repeat(4,minmax(90px,1fr))}}
+@media(max-width:600px){.kpi-strip{grid-template-columns:repeat(2,minmax(105px,1fr))}}
+
+.export-capture-kpi.age-red{background:#ffc7ce}.export-capture-kpi.age-yellow{background:#ffeb9c}.export-capture-kpi.capa-fibra{background:#ffe69a}.export-capture-kpi.capa-usac{background:#d8efd0}.export-capture-kpi.capa-infra{background:#ffc2ca}.export-capture-kpi.capa-edificio{background:#d9eafa}
+.export-capture-preview{margin-top:12px;width:100%;border-collapse:collapse}.export-capture-preview th{background:#162230;color:#fff;padding:6px;font-size:9px}.export-capture-preview td{padding:5px 6px;border:1px solid #e4e9ef;font-size:9px;white-space:nowrap}.export-capture-preview tbody tr:nth-child(even){background:#f8fafc}
+
+
+/* V22.22 ajustes solicitados */
+.table-card{position:relative}
+
+.kpi-strip .kpi:nth-child(5),.kpi-strip .kpi:nth-child(6){background:#ffc7ce}
+.export-capture-kpi.kpi-danger,.excel-kpi.kpi-danger{background:#ffc7ce}
+.multi-tools{grid-template-columns:1fr auto auto}
+.export-capture-host{width:1400px}
+.export-capture-card.excel-like{padding:14px 16px 18px;position:relative}
+.excel-kpi-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:0;border:1px solid #d9e2ec;border-bottom:0;margin-top:6px}
+.excel-kpi-grid.second{margin-top:0;border-top:0}
+.excel-kpi{min-height:58px;border-right:1px solid #d9e2ec;border-bottom:1px solid #d9e2ec;padding:6px 8px;background:#fff;display:flex;flex-direction:column;justify-content:center}
+.excel-kpi:last-child{border-right:0}
+.excel-kpi span{font-size:11px;font-weight:700;color:#17263a;line-height:1.2}
+.excel-kpi strong{font-size:15px;margin-top:4px}
+.excel-daily-float{width:370px;margin:12px auto 10px}
+.export-capture-daily tr.state-completed td{background:#dce9ff;color:#215cad}
+.export-capture-daily tr.state-suspended td{background:#d8f4ee;color:#0f766e}
+.export-capture-daily tr.state-cancelled td{background:#ffd7dc;color:#a12734}
+.export-capture-daily tr.state-notdone td{background:#fff0c2;color:#8a6400}
+.export-capture-preview th{font-size:10px}
+.export-capture-preview td{font-size:10px}
+
+.table-head{position:relative}
+.head-actions{position:relative}
+.table-daily-state{position:relative;border:0;background:transparent;z-index:60;margin-right:4px}
+.table-daily-state>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;position:relative;min-height:28px;padding:6px 28px 6px 12px;color:#34465d;font-size:12px;font-weight:950;user-select:none;border-radius:10px;background:#fff;border:1px solid var(--line);box-shadow:0 4px 14px rgba(15,23,42,.08)}
+.table-daily-state>summary::-webkit-details-marker{display:none}
+.table-daily-state>summary::after{content:"▾";position:absolute;right:10px;color:#718097;transition:.15s}
+.table-daily-state[open]>summary::after{transform:rotate(180deg)}
+.table-daily-state .daily-state-body{position:absolute;right:0;top:calc(100% + 8px);width:320px;max-width:85vw;border:1px solid var(--line);border-radius:12px;background:#fff;box-shadow:0 18px 36px rgba(15,23,42,.18);padding:8px 10px 10px}
+.table-daily-state .daily-state-table-wrap{max-width:none;margin:0}
+.table-daily-state .daily-state-table{min-width:100%}
+.table-daily-state .daily-state-table th{font-size:9px;padding:6px 8px}
+.table-daily-state .daily-state-table td{padding:6px 8px;font-size:11px}
+.table-daily-state .daily-state-table tr.state-completed td{background:#dce9ff;color:#215cad}
+.table-daily-state .daily-state-table tr.state-suspended td{background:#d8f4ee;color:#0f766e}
+.table-daily-state .daily-state-table tr.state-cancelled td{background:#ffd7dc;color:#a12734}
+.table-daily-state .daily-state-table tr.state-notdone td{background:#fff0c2;color:#8a6400}
+@media(max-width:1100px){.head-actions{width:100%}.table-daily-state .daily-state-body{right:auto;left:0}}
+
+.export-capture-preview td.created-green{background:#c6efce;color:#007d51;font-weight:700}
+.export-capture-preview td.created-yellow{background:#ffeb9c;color:#8a6400;font-weight:700}
+.export-capture-preview td.created-old{background:#f4c7ab;color:#7a3f19;font-weight:700}
+.export-capture-preview td.affected-yes{background:#ffeb9c;color:#8a6400;font-weight:700}
+.export-capture-preview td.affected-no{background:#c6efce;color:#007d51;font-weight:700}
+.export-capture-preview td.age-green{background:#c6efce;color:#007d51;font-weight:700}
+.export-capture-preview td.age-yellow{background:#ffeb9c;color:#8a6400;font-weight:700}
+.export-capture-preview td.age-red{background:#ffc7ce;color:#9c0006;font-weight:700}
+.export-capture-preview .status-pill{display:inline-block;padding:3px 7px;border-radius:6px;font-weight:800;font-size:10px}
+.export-capture-preview .status-pill.started{background:#ffeb9c;color:#815f00}
+.export-capture-preview .status-pill.suspended{background:#ffd7dc;color:#a12734}
+.export-capture-preview .status-pill.assigned{background:#dce9ff;color:#215cad}
+.export-capture-preview .status-pill.enroute{background:#d8eef7;color:#1c617a}
+.export-capture-preview .status-pill.scheduled{background:#eadcff;color:#64409b}
+.export-capture-preview .status-pill.completed{background:#d8f4e6;color:#00734a}
+.export-capture-preview .status-pill.cancelled{background:#ece7ff;color:#6038a8}
+
+/* =========================================================
+   V22.27 - Desktop 14/15" compacto
+   - Filtros en una sola fila
+   - 14 KPI en una sola fila
+   - Menor altura de cabecera
+   - Tabla ocupa el alto restante de la pantalla
+   - Cabeceras de columnas siempre visibles dentro del scroll
+   ========================================================= */
+@media (min-width:1000px){
+  .topbar{
+    min-height:50px;
+    height:50px;
+    padding:5px 10px;
+  }
+  .brand-mark{width:32px;height:32px;border-radius:8px;font-size:12px}
+  .brand h1{font-size:16px}
+  .top-actions{gap:6px}
+  .top-icon-btn{width:32px;height:32px;border-radius:7px}
+  .top-icon-btn.info svg{width:17px;height:17px}
+  .top-icon-btn.refresh svg{width:18px;height:18px}
+  .last-update{font-size:10px}
+
+  main{padding:5px 8px}
+  .sticky-dashboard{
+    top:50px;
+    padding:3px 0 2px;
+    box-shadow:0 3px 9px rgba(15,23,42,.05);
+  }
+
+  .compact-toolbar{padding:5px 7px}
+  .toolbar-grid{
+    grid-template-columns:
+      minmax(170px,1.50fr)
+      repeat(6,minmax(72px,.72fr))
+      minmax(175px,1.18fr)
+      90px;
+    gap:4px;
+    align-items:end;
+  }
+  .toolbar-grid label,.toolbar-grid .field{
+    min-width:0;
+    gap:2px;
+    font-size:9px;
+    line-height:1.05;
+  }
+  .toolbar-grid input,
+  .toolbar-grid .multi>button,
+  .fixed-window-value{
+    width:100%;
+    min-width:0;
+    height:29px;
+    min-height:29px;
+    border-radius:6px;
+    padding:0 7px;
+    font-size:10px;
+  }
+  .fixed-window-value{
+    display:flex;
+    align-items:center;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .toolbar-inline-actions{
+    gap:3px;
+    padding:0;
+    justify-content:flex-end;
+    flex-wrap:nowrap;
+  }
+  .icon-action{
+    width:28px;
+    height:28px;
+    min-width:28px;
+    border-radius:6px;
+  }
+  .icon-action svg{width:14px;height:14px}
+
+  /* Nunca dividir KPI en dos filas en notebook/desktop. */
+  .kpi-strip{
+    grid-template-columns:repeat(14,minmax(0,1fr));
+    gap:3px;
+    padding:3px 0 1px;
+  }
+  .kpi{
+    min-width:0;
+    min-height:33px;
+    padding:3px 5px;
+    border-radius:6px;
+  }
+  .kpi .l{
+    font-size:7px;
+    line-height:1;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .kpi .v{
+    font-size:14px;
+    line-height:1;
+    margin-top:2px;
+  }
+
+  .map-details{margin-top:4px}
+  .map-details>summary{
+    min-height:27px;
+    padding:5px 9px;
+    font-size:10px;
+  }
+
+  .table-card{margin-top:4px}
+  .table-head{
+    min-height:35px;
+    padding:4px 8px;
+    gap:6px;
+    flex-wrap:nowrap;
+  }
+  .table-head strong{font-size:12px}
+  .table-head .muted{font-size:9px;margin-left:5px}
+  .head-actions{gap:4px;flex-wrap:nowrap;width:auto}
+  .head-actions .btn.small,
+  .column-chooser summary.btn.small{
+    padding:5px 8px;
+    font-size:9px;
+    min-height:27px;
+  }
+  .table-daily-state>summary{
+    min-height:27px;
+    padding:5px 24px 5px 9px;
+    border-radius:8px;
+    font-size:9px;
+  }
+
+  /* El scroll vertical queda dentro de la tabla: el dashboard no tapa el thead. */
+  .table-scroll{
+    height:calc(100vh - 226px);
+    max-height:calc(100vh - 226px);
+    min-height:300px;
+    overflow:auto;
+    overscroll-behavior:contain;
+    scrollbar-gutter:stable;
+  }
+  .table-scroll table{min-width:1600px}
+  #opTable thead{
+    position:sticky;
+    top:0;
+    z-index:90;
+  }
+  #opTable thead::after{
+    content:"";
+    position:absolute;
+    left:0;right:0;bottom:0;
+    height:1px;
+    background:#cbd5e1;
+  }
+  #opTable th{
+    padding:5px 5px;
+    font-size:9px;
+    line-height:1.05;
+  }
+  #opTable .column-filters th{padding:3px}
+  #opTable .column-filters input,
+  #opTable .column-filters .multi>button{
+    height:25px;
+    min-height:25px;
+    font-size:8.5px;
+  }
+  #opTable td{
+    padding:5px 7px;
+    font-size:10px;
+  }
+
+  .table-footer{
+    min-height:34px;
+    padding:4px 8px;
+  }
+  .table-footer .btn.small{padding:5px 8px;font-size:9px}
+  .table-footer #opPageLabel{font-size:10px}
+
+  .side-backdrop{inset:50px 0 0 0}
+  .side-menu{top:50px}
+}
+
+/* En anchos realmente chicos permitimos volver a un layout adaptable. */
+@media (max-width:999px){
+  .table-scroll{max-height:67vh;height:auto}
+}
+
+/* =========================================================
+   V22.28 - Cabecera reducida para notebook 14/15"
+   Reduce exclusivamente altura vertical sin perder filtros/KPI.
+   ========================================================= */
+@media (min-width:1000px){
+  /* Barra superior */
+  .topbar{
+    min-height:42px;
+    height:42px;
+    padding:3px 8px;
+  }
+  .brand{gap:7px}
+  .brand-mark{width:28px;height:28px;border-radius:7px;font-size:11px}
+  .brand h1{font-size:14px;line-height:1}
+  .hamburger{width:30px;height:30px;min-width:30px;border-radius:7px}
+  .hamburger svg{width:16px;height:16px}
+  .top-actions{gap:4px}
+  .top-icon-btn{width:29px;height:29px;border-radius:7px}
+  .top-icon-btn.info svg{width:15px;height:15px}
+  .top-icon-btn.refresh svg{width:16px;height:16px}
+  .last-update{font-size:9px;line-height:1}
+
+  main{padding:3px 7px}
+  .sticky-dashboard{
+    top:42px;
+    padding:2px 0 1px;
+  }
+
+  /* Filtros: una fila, pero bastante más baja */
+  .compact-toolbar{
+    padding:3px 6px 4px;
+    border-radius:10px;
+  }
+  .toolbar-grid{
+    gap:3px;
+  }
+  .toolbar-grid label,.toolbar-grid .field{
+    gap:1px;
+    font-size:8px;
+    line-height:1;
+  }
+  .toolbar-grid input,
+  .toolbar-grid .multi>button,
+  .fixed-window-value{
+    height:25px;
+    min-height:25px;
+    border-radius:5px;
+    padding:0 6px;
+    font-size:9px;
+  }
+  .toolbar-inline-actions{gap:2px}
+  .icon-action{
+    width:25px;
+    height:25px;
+    min-width:25px;
+    border-radius:5px;
+  }
+  .icon-action svg{width:12px;height:12px}
+
+  /* KPI: siempre una línea y menos altos */
+  .kpi-strip{
+    gap:3px;
+    padding:2px 0 1px;
+  }
+  .kpi{
+    min-height:29px;
+    padding:2px 5px;
+    border-radius:5px;
+  }
+  .kpi .l{
+    font-size:6.5px;
+    line-height:.95;
+  }
+  .kpi .v{
+    font-size:13px;
+    line-height:.95;
+    margin-top:1px;
+  }
+
+  /* Si el mapa está colapsado, que prácticamente no consuma alto. */
+  .map-details{margin-top:2px}
+  .map-details>summary{
+    min-height:23px;
+    padding:3px 8px;
+    font-size:9px;
+  }
+
+  /* Cabecera propia de la tabla */
+  .table-card{margin-top:2px}
+  .table-head{
+    min-height:30px;
+    padding:3px 7px;
+    gap:4px;
+  }
+  .table-head strong{font-size:11px;line-height:1}
+  .table-head .muted{font-size:8px;margin-left:4px;line-height:1}
+  .head-actions{gap:3px}
+  .head-actions .btn.small,
+  .column-chooser summary.btn.small{
+    padding:3px 7px;
+    font-size:8px;
+    min-height:23px;
+    border-radius:6px;
+  }
+  .table-daily-state>summary{
+    min-height:23px;
+    padding:3px 21px 3px 8px;
+    border-radius:6px;
+    font-size:8px;
+  }
+
+  /* Más espacio útil para filas. El scroll sigue siendo interno. */
+  .table-scroll{
+    height:calc(100vh - 184px);
+    max-height:calc(100vh - 184px);
+    min-height:320px;
+  }
+
+  /* Cabecera de columnas fija y más compacta */
+  #opTable th{
+    padding:4px 4px;
+    font-size:8.5px;
+    line-height:1;
+  }
+  #opTable .column-filters th{padding:2px 3px}
+  #opTable .column-filters input,
+  #opTable .column-filters .multi>button{
+    height:23px;
+    min-height:23px;
+    font-size:8px;
+    border-radius:5px;
+  }
+  #opTable td{
+    padding:4px 7px;
+    font-size:9.5px;
+  }
+
+  .table-footer{
+    min-height:29px;
+    padding:3px 7px;
+  }
+  .table-footer .btn.small{padding:4px 7px;font-size:8px;min-height:23px}
+  .table-footer #opPageLabel{font-size:9px}
+
+  .side-backdrop{inset:42px 0 0 0}
+  .side-menu{top:42px}
+}
+
+/* =========================================================
+   V22.29 - Fix popup Completados Ayer/Hoy
+   El popup debe quedar por encima del thead sticky y filtros.
+   ========================================================= */
+.table-card{
+  position:relative;
+  overflow:visible;
+}
+.table-head{
+  position:relative;
+  z-index:180;
+  overflow:visible;
+}
+.head-actions{
+  position:relative;
+  z-index:190;
+  overflow:visible;
+}
+.table-daily-state{
+  position:relative;
+  z-index:200;
+  overflow:visible;
+}
+.table-daily-state .daily-state-body{
+  z-index:220;
+}
+/* El encabezado de la tabla continúa sticky, pero debajo del popup. */
+#opTable thead{
+  z-index:90;
+}
+
+
+/* =========================================================
+   V22.30 - Cabecera aún más baja + mapa en popup
+   ========================================================= */
+@media (min-width:1000px){
+  .topbar{
+    min-height:38px;
+    height:38px;
+    padding:2px 7px;
+  }
+  .brand{gap:6px}
+  .brand-mark{width:26px;height:26px;border-radius:6px;font-size:10px}
+  .brand h1{font-size:13px;line-height:1}
+  .hamburger{width:28px;height:28px;min-width:28px;border-radius:6px}
+  .hamburger svg{width:15px;height:15px}
+  .top-icon-btn{width:27px;height:27px;border-radius:6px}
+  .top-icon-btn.info svg{width:14px;height:14px}
+  .top-icon-btn.refresh svg{width:15px;height:15px}
+  .last-update{font-size:8px}
+
+  .sticky-dashboard{top:38px}
+  .side-backdrop{inset:38px 0 0 0}
+  .side-menu{top:38px}
+
+  /* Al quitar la barra colapsable del mapa, la tabla aprovecha ese espacio. */
+  .table-card{margin-top:3px}
+  .table-scroll{
+    height:calc(100vh - 150px);
+    max-height:calc(100vh - 150px);
+  }
+}
+
+/* El mapa ya no ocupa espacio en el dashboard; se abre desde el icono. */
+.map-modal-card{
+  width:min(1180px,96vw);
+  height:min(82vh,760px);
+  max-height:90vh;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.map-modal-head{flex:0 0 auto}
+.map-modal-head h2{font-size:16px}
+.map-modal-body{
+  flex:1 1 auto;
+  min-height:0;
+  padding:10px;
+}
+.map-modal-body #map{
+  width:100%;
+  height:100%;
+  min-height:420px;
+  border-radius:9px;
+}
+
+/* =========================================================
+   V22.33 - Tabla más compacta, scroll horizontal siempre visible,
+   zoom de densidad y cabecera superior ~30% más baja.
+   ========================================================= */
+@media (min-width:1000px){
+  /* Cabecera superior: ~30% menos que V22.30 (38px -> 27px). */
+  .topbar{
+    min-height:27px;
+    height:27px;
+    padding:1px 6px;
+  }
+  .top-left{gap:5px}
+  .brand{gap:5px}
+  .brand-mark{width:20px;height:20px;border-radius:5px;font-size:8px}
+  .brand h1{font-size:11px;line-height:1}
+  .hamburger,.top-icon-btn{width:21px;height:21px;min-width:21px;border-radius:5px}
+  .hamburger svg{width:12px;height:12px}
+  .top-icon-btn.info svg{width:11px;height:11px}
+  .top-icon-btn.refresh svg{width:12px;height:12px}
+  .last-update,.load-status{font-size:7.5px;line-height:1}
+  .top-actions{gap:3px}
+
+  .sticky-dashboard{top:27px;padding-top:1px}
+  .side-backdrop{inset:27px 0 0 0}
+  .side-menu{top:27px}
+
+  /* Un poco más compactos filtros y KPI para ganar área útil. */
+  .compact-toolbar{padding:2px 5px 3px}
+  .toolbar-grid label,.toolbar-grid .field{font-size:7.5px}
+  .toolbar-grid input,.toolbar-grid .multi>button,.fixed-window-value{
+    height:22px;min-height:22px;font-size:8.5px;padding:0 5px;
+  }
+  .icon-action{width:22px;height:22px;min-width:22px}
+  .kpi{min-height:25px;padding:2px 4px}
+  .kpi .l{font-size:6px}
+  .kpi .v{font-size:11.5px}
+
+  .table-head{min-height:27px;padding:2px 6px}
+  .table-head strong{font-size:10px}
+  .table-head .muted{font-size:7.5px}
+  .table-daily-state>summary,.head-actions .btn.small,.column-chooser summary.btn.small{
+    min-height:21px;padding-top:2px;padding-bottom:2px;font-size:7.5px;
+  }
+  .table-scroll{
+    height:calc(100vh - 125px);
+    max-height:calc(100vh - 125px);
+  }
+}
+
+/* Barra horizontal duplicada y sincronizada, siempre arriba de la tabla. */
+.table-hscroll{
+  width:100%;
+  height:14px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  background:#f5f7fa;
+  border-top:1px solid #dde3ea;
+  border-bottom:1px solid #d9e0e7;
+  scrollbar-gutter:stable;
+  position:relative;
+  z-index:95;
+}
+.table-hscroll-inner{height:1px;min-width:100%}
+.table-hscroll::-webkit-scrollbar{height:11px}
+
+/* Controles de zoom de densidad de la tabla. */
+.table-zoom{display:flex;align-items:center;gap:2px;border:1px solid #d6dee7;border-radius:6px;background:#f8fafc;padding:1px 3px;white-space:nowrap}
+.table-zoom .zoom-btn{min-width:21px!important;width:21px;padding:0!important;font-size:13px!important;line-height:1!important}
+.table-zoom span{min-width:27px;text-align:center;font-size:8px;font-weight:900;color:#526173}
+
+/* Columnas: anchos más ajustados y texto con elipsis. */
+#opTable{width:max-content;min-width:100%;table-layout:fixed}
+#opTable th[data-column],#opTable td[data-column]{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#opTable [data-column="task"]{width:112px;max-width:112px}
+#opTable [data-column="created"]{width:132px;max-width:132px}
+#opTable [data-column="affected"]{width:70px;max-width:70px}
+#opTable [data-column="priority"]{width:58px;max-width:58px}
+#opTable [data-column="node"]{width:74px;max-width:74px}
+#opTable [data-column="tipif"]{width:54px;max-width:54px}
+#opTable [data-column="status"]{width:88px;max-width:88px}
+#opTable [data-column="subcapa"]{width:78px;max-width:78px}
+#opTable [data-column="origin"]{width:70px;max-width:70px}
+#opTable [data-column="event"]{width:92px;max-width:92px}
+#opTable [data-column="parentEvent"]{width:92px;max-width:92px}
+#opTable [data-column="ageDays"]{width:78px;max-width:78px}
+#opTable [data-column="eventAgeDays"]{width:88px;max-width:88px}
+#opTable [data-column="contractor"]{width:108px;max-width:108px}
+#opTable [data-column="scheduled"]{width:84px;max-width:84px}
+#opTable [data-column="tipificacion"]{width:155px;max-width:155px}
+#opTable [data-column="capa"]{width:78px;max-width:78px}
+#opTable [data-column="eventSigla"]{width:72px;max-width:72px}
+#opTable [data-column="startTime"],#opTable [data-column="endTime"]{width:108px;max-width:108px}
+#opTable [data-column="tech"]{width:128px;max-width:128px}
+#opTable [data-column="resource"]{width:92px;max-width:92px}
+#opTable [data-column="tree"]{width:80px;max-width:80px}
+
+/* Densidad inicial reducida. El + / - modifica estas clases sin cambiar el zoom del navegador. */
+.table-card.table-density-80 #opTable th{padding:2px 3px;font-size:6.8px}
+.table-card.table-density-80 #opTable td{padding:2px 5px;font-size:7.8px}
+.table-card.table-density-80 #opTable .column-filters th{padding:1px 2px}
+.table-card.table-density-80 #opTable .column-filters input,
+.table-card.table-density-80 #opTable .column-filters .multi>button{height:18px;min-height:18px;font-size:6.8px}
+.table-card.table-density-80 .badge{padding:2px 5px;font-size:7px}
+
+.table-card.table-density-90 #opTable th{padding:3px 3px;font-size:7.4px}
+.table-card.table-density-90 #opTable td{padding:3px 5px;font-size:8.4px}
+.table-card.table-density-90 #opTable .column-filters th{padding:1px 2px}
+.table-card.table-density-90 #opTable .column-filters input,
+.table-card.table-density-90 #opTable .column-filters .multi>button{height:20px;min-height:20px;font-size:7.2px}
+.table-card.table-density-90 .badge{padding:2px 5px;font-size:7.4px}
+
+.table-card.table-density-100 #opTable th{padding:4px 4px;font-size:8.5px}
+.table-card.table-density-100 #opTable td{padding:4px 7px;font-size:9.5px}
+.table-card.table-density-100 #opTable .column-filters th{padding:2px 3px}
+.table-card.table-density-100 #opTable .column-filters input,
+.table-card.table-density-100 #opTable .column-filters .multi>button{height:23px;min-height:23px;font-size:8px}
+.table-card.table-density-100 .badge{padding:4px 7px;font-size:9px}
+
+.table-card.table-density-110 #opTable th{padding:5px 5px;font-size:9.2px}
+.table-card.table-density-110 #opTable td{padding:5px 7px;font-size:10.2px}
+.table-card.table-density-110 #opTable .column-filters th{padding:3px}
+.table-card.table-density-110 #opTable .column-filters input,
+.table-card.table-density-110 #opTable .column-filters .multi>button{height:25px;min-height:25px;font-size:8.6px}
+.table-card.table-density-110 .badge{padding:4px 7px;font-size:9.4px}
+
+
+/* =========================================================
+   V22.34 - Consistencia localhost / file://
+   - Fuerza el layout compacto también cuando Chrome reduce el
+     viewport CSS por zoom del origen localhost.
+   - Mantiene filtros y KPI en una sola línea desde 760px.
+   ========================================================= */
+@media (min-width:760px){
+  .topbar{
+    min-height:27px!important;
+    height:27px!important;
+    padding:1px 6px!important;
+  }
+  .top-left{gap:5px!important}
+  .brand{gap:5px!important}
+  .brand-mark{width:20px!important;height:20px!important;border-radius:5px!important;font-size:8px!important}
+  .brand h1{font-size:11px!important;line-height:1!important}
+  .hamburger,.top-icon-btn{width:21px!important;height:21px!important;min-width:21px!important;border-radius:5px!important}
+  .hamburger svg{width:12px!important;height:12px!important}
+  .top-icon-btn.info svg{width:11px!important;height:11px!important}
+  .top-icon-btn.refresh svg{width:12px!important;height:12px!important}
+  .last-update,.load-status{font-size:7.5px!important;line-height:1!important}
+  .top-actions{gap:3px!important}
+
+  main{padding:3px 7px!important}
+  .sticky-dashboard{top:27px!important;padding:1px 0!important}
+
+  .compact-toolbar{padding:2px 5px 3px!important}
+  .toolbar-grid{
+    display:grid!important;
+    grid-template-columns:
+      minmax(180px,1.55fr)
+      repeat(6,minmax(72px,.72fr))
+      minmax(185px,1.25fr)
+      84px!important;
+    gap:3px!important;
+    align-items:end!important;
+  }
+  .toolbar-grid label,.toolbar-grid .field{
+    min-width:0!important;
+    gap:1px!important;
+    font-size:7.5px!important;
+    line-height:1!important;
+  }
+  .toolbar-grid input,.toolbar-grid .multi>button,.fixed-window-value{
+    width:100%!important;
+    min-width:0!important;
+    height:22px!important;
+    min-height:22px!important;
+    font-size:8.5px!important;
+    padding:0 5px!important;
+  }
+  .fixed-window-value{white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  .toolbar-inline-actions{display:flex!important;gap:2px!important;flex-wrap:nowrap!important;justify-content:flex-end!important}
+  .icon-action{width:22px!important;height:22px!important;min-width:22px!important}
+
+  .kpi-strip{
+    display:grid!important;
+    grid-template-columns:repeat(14,minmax(0,1fr))!important;
+    gap:3px!important;
+    padding:2px 0 1px!important;
+  }
+  .kpi{min-width:0!important;min-height:25px!important;padding:2px 4px!important}
+  .kpi .l{font-size:6px!important;line-height:1!important}
+  .kpi .v{font-size:11.5px!important;line-height:1!important;margin-top:1px!important}
+
+  .table-card{margin-top:3px!important}
+  .table-head{min-height:27px!important;padding:2px 6px!important;gap:3px!important;flex-wrap:nowrap!important}
+  .table-head strong{font-size:10px!important}
+  .table-head .muted{font-size:7.5px!important}
+  .head-actions{gap:3px!important;flex-wrap:nowrap!important;width:auto!important}
+  .table-daily-state>summary,.head-actions .btn.small,.column-chooser summary.btn.small{
+    min-height:21px!important;padding-top:2px!important;padding-bottom:2px!important;font-size:7.5px!important;
+  }
+  .table-scroll{
+    height:calc(100vh - 125px)!important;
+    max-height:calc(100vh - 125px)!important;
+    min-height:260px!important;
+  }
+  .side-backdrop{inset:27px 0 0 0!important}
+  .side-menu{top:27px!important}
+}
+
+/* =========================================================
+   V22.35 - KPI horizontales + histórico compacto + scroll
+   ========================================================= */
+
+/* KPI: valor a la izquierda, nombre a la derecha, más legible. */
+@media (min-width:760px){
+  .kpi-strip{
+    grid-template-columns:repeat(14,minmax(0,1fr))!important;
+    gap:3px!important;
+    padding:2px 0 2px!important;
+  }
+  .kpi{
+    min-height:29px!important;
+    height:29px!important;
+    padding:2px 6px!important;
+    display:flex!important;
+    flex-direction:row!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:6px!important;
+    overflow:hidden!important;
+  }
+  .kpi .v{
+    order:1!important;
+    flex:0 0 auto!important;
+    margin:0!important;
+    font-size:14px!important;
+    line-height:1!important;
+    font-weight:950!important;
+    white-space:nowrap!important;
+  }
+  .kpi .l{
+    order:2!important;
+    min-width:0!important;
+    flex:1 1 auto!important;
+    font-size:7.7px!important;
+    line-height:1.05!important;
+    font-weight:900!important;
+    text-transform:uppercase!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+}
+
+/* Scroll horizontal superior: deliberadamente visible y separado
+   de la cabecera para poder mover la tabla sin perder los títulos. */
+.table-hscroll{
+  display:block!important;
+  height:17px!important;
+  min-height:17px!important;
+  overflow-x:scroll!important;
+  overflow-y:hidden!important;
+  background:#e9edf2!important;
+  border-top:1px solid #cbd4de!important;
+  border-bottom:1px solid #cbd4de!important;
+  scrollbar-color:#8d949b #e1e5e9;
+  scrollbar-width:auto;
+  z-index:110!important;
+}
+.table-hscroll-inner{height:1px!important;min-width:100%!important}
+.table-hscroll::-webkit-scrollbar{height:12px!important;display:block!important}
+.table-hscroll::-webkit-scrollbar-track{background:#e1e5e9!important;border-radius:8px!important}
+.table-hscroll::-webkit-scrollbar-thumb{background:#8d949b!important;border-radius:8px!important;border:2px solid #e1e5e9!important}
+.table-hscroll::-webkit-scrollbar-thumb:hover{background:#737a81!important}
+
+/* La cabecera arranca inmediatamente debajo del slider y permanece visible
+   durante el desplazamiento vertical interno de la tabla. */
+.table-scroll{position:relative!important}
+#opTable thead{position:sticky!important;top:0!important;z-index:80!important}
+#opTable #taskHeaderRow th{position:sticky!important;top:0!important;z-index:82!important}
+#opTable #taskFilterRow th{position:sticky!important;top:21px!important;z-index:81!important}
+
+/* Histórico / drawer con densidad equivalente a la tabla compacta. */
+@media (min-width:760px){
+  .drawer-panel{width:min(590px,92vw)!important}
+  .drawer-head{padding:7px 10px!important;align-items:center!important}
+  .drawer-head h2{font-size:18px!important;line-height:1!important;margin:1px 0!important}
+  .drawer-head .eyebrow{font-size:7px!important;line-height:1!important}
+  .drawer-head .btn{min-height:24px!important;padding:3px 9px!important;font-size:8px!important}
+  .drawer-body{padding:7px 9px!important}
+  .detail-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:4px!important}
+  .detail-item{border-radius:6px!important;padding:5px 7px!important;min-height:42px!important}
+  .detail-item .k{font-size:7px!important;line-height:1.05!important}
+  .detail-item .v{font-size:9.5px!important;line-height:1.15!important;margin-top:2px!important}
+  .history-title{font-size:14px!important;line-height:1!important;margin:10px 0 5px!important}
+  .history-source{font-size:7.5px!important;margin:0 0 4px!important;color:#718097!important}
+  .visit{border-left-width:2px!important;padding:0 0 5px 7px!important}
+  .visit-card{border-radius:6px!important;padding:5px 7px!important}
+  .visit-top{gap:5px!important;font-size:8.5px!important}
+  .visit-top .badge{font-size:7px!important;padding:2px 5px!important}
+  .visit-times,.visit-meta{font-size:8px!important;line-height:1.2!important;margin-top:3px!important}
+  .notes{font-size:8px!important;line-height:1.2!important;padding:5px!important;margin-top:4px!important;border-radius:5px!important}
+}
+
+/* =========================================================
+   V22.36 - KPI legibles + histórico zoom + scroll en footer
+   ========================================================= */
+@media (min-width:760px){
+  /* KPI: número algo menor y etiqueta algo mayor. */
+  .kpi .v{
+    font-size:12.5px!important;
+    line-height:1!important;
+  }
+  .kpi .l{
+    font-size:8.8px!important;
+    line-height:1.05!important;
+    letter-spacing:.01em!important;
+  }
+
+  /* El scroll horizontal vive en el footer, junto a paginación. */
+  .table-footer{
+    display:flex!important;
+    align-items:center!important;
+    gap:10px!important;
+    padding:4px 8px!important;
+    min-height:31px!important;
+  }
+  .table-footer .table-hscroll{
+    flex:1 1 auto!important;
+    width:auto!important;
+    min-width:140px!important;
+    height:16px!important;
+    min-height:16px!important;
+    margin:0!important;
+    border:0!important;
+    background:transparent!important;
+  }
+  .table-footer .pager{
+    flex:0 0 auto!important;
+    margin-left:auto!important;
+  }
+  .table-hscroll::-webkit-scrollbar{height:11px!important}
+
+  /* Histórico: base más legible que V22.35 y controles propios de zoom. */
+  .drawer-panel{width:min(650px,94vw)!important}
+  .drawer-head-actions{display:flex!important;align-items:center!important;gap:7px!important}
+  .history-zoom{display:flex!important;align-items:center!important;gap:3px!important;border:1px solid var(--line)!important;border-radius:7px!important;padding:2px!important;background:#f8fafc!important}
+  .history-zoom .zoom-btn{min-width:27px!important;height:25px!important;padding:2px 7px!important;font-size:12px!important}
+  #historyZoomLabel{min-width:38px!important;text-align:center!important;font-size:9px!important;font-weight:900!important;color:#526173!important}
+
+  .drawer-head{padding:8px 11px!important}
+  .drawer-head h2{font-size:19px!important}
+  .drawer-head .eyebrow{font-size:8px!important}
+  .drawer-head .btn{font-size:9px!important}
+  .drawer-body{padding:8px 10px!important}
+  .detail-item .k{font-size:8px!important}
+  .detail-item .v{font-size:10.5px!important}
+  .history-title{font-size:15px!important}
+  .history-source{font-size:8.5px!important}
+  .visit-top{font-size:9.5px!important}
+  .visit-top .badge{font-size:8px!important}
+  .visit-times,.visit-meta{font-size:9px!important;line-height:1.28!important}
+  .notes{font-size:9px!important;line-height:1.3!important}
+
+  /* Zoom del histórico. 100% es la base anterior. */
+  .drawer-panel.history-zoom-85 .drawer-body{font-size:85%!important}
+  .drawer-panel.history-zoom-85 .detail-item .k{font-size:7px!important}.drawer-panel.history-zoom-85 .detail-item .v{font-size:9px!important}.drawer-panel.history-zoom-85 .history-title{font-size:13px!important}.drawer-panel.history-zoom-85 .history-source{font-size:7.5px!important}.drawer-panel.history-zoom-85 .visit-top{font-size:8px!important}.drawer-panel.history-zoom-85 .visit-top .badge{font-size:7px!important}.drawer-panel.history-zoom-85 .visit-times,.drawer-panel.history-zoom-85 .visit-meta,.drawer-panel.history-zoom-85 .notes{font-size:8px!important}
+  .drawer-panel.history-zoom-115 .detail-item .k{font-size:9px!important}.drawer-panel.history-zoom-115 .detail-item .v{font-size:12px!important}.drawer-panel.history-zoom-115 .history-title{font-size:17px!important}.drawer-panel.history-zoom-115 .history-source{font-size:9.5px!important}.drawer-panel.history-zoom-115 .visit-top{font-size:11px!important}.drawer-panel.history-zoom-115 .visit-top .badge{font-size:9px!important}.drawer-panel.history-zoom-115 .visit-times,.drawer-panel.history-zoom-115 .visit-meta,.drawer-panel.history-zoom-115 .notes{font-size:10.5px!important}
+  .drawer-panel.history-zoom-130 .detail-item .k{font-size:10px!important}.drawer-panel.history-zoom-130 .detail-item .v{font-size:13.5px!important}.drawer-panel.history-zoom-130 .history-title{font-size:19px!important}.drawer-panel.history-zoom-130 .history-source{font-size:10.5px!important}.drawer-panel.history-zoom-130 .visit-top{font-size:12px!important}.drawer-panel.history-zoom-130 .visit-top .badge{font-size:10px!important}.drawer-panel.history-zoom-130 .visit-times,.drawer-panel.history-zoom-130 .visit-meta,.drawer-panel.history-zoom-130 .notes{font-size:12px!important}
+
+  /* Ayer/Hoy: números clickeables para exportación. */
+  .daily-export-btn{appearance:none;border:0;background:transparent;color:inherit;font:inherit;font-weight:950;padding:2px 7px;border-radius:6px;cursor:pointer;min-width:32px}
+  .daily-export-btn:not(:disabled):hover{background:rgba(255,255,255,.62);box-shadow:0 0 0 1px rgba(15,23,42,.12) inset;text-decoration:underline}
+  .daily-export-btn:disabled{cursor:default;opacity:.6}
+}
+
+
+/* =========================================================
+   V22.37 - KPI: título arriba, valor debajo
+   ========================================================= */
+@media (min-width:760px){
+  .kpi{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:center!important;
+    align-items:flex-start!important;
+    min-height:35px!important;
+    padding:3px 7px!important;
+  }
+  .kpi .l{
+    order:1!important;
+    width:100%!important;
+    font-size:8.8px!important;
+    line-height:1.02!important;
+    font-weight:900!important;
+    margin:0!important;
+    white-space:nowrap!important;
+    overflow:hidden!important;
+    text-overflow:ellipsis!important;
+  }
+  .kpi .v{
+    order:2!important;
+    font-size:11.5px!important;
+    line-height:1.02!important;
+    margin-top:2px!important;
+    font-weight:950!important;
+    white-space:nowrap!important;
+  }
+}
+
+/* =========================================================
+   V22.38 - filtros tabla + antigüedad exacta por horas + KPI 24-48
+   ========================================================= */
+@media (min-width:760px){
+  /* 15 KPI en una sola línea. */
+  .kpi-strip{
+    grid-template-columns:repeat(15,minmax(68px,1fr))!important;
+    gap:4px!important;
+  }
+
+  /* Cabecera + filtros: ambos quedan fijos pero siguen ocupando su espacio
+     natural, evitando que la fila de filtros tape la primera tarea. */
+  #opTable thead{
+    position:static!important;
+    z-index:auto!important;
+  }
+  #opTable #taskHeaderRow th{
+    position:sticky!important;
+    top:0!important;
+    z-index:120!important;
+    height:22px!important;
+    min-height:22px!important;
+    padding-top:2px!important;
+    padding-bottom:2px!important;
+  }
+  #opTable #taskFilterRow th{
+    position:sticky!important;
+    top:22px!important;
+    z-index:119!important;
+    height:30px!important;
+    min-height:30px!important;
+    padding:2px!important;
+    overflow:visible!important;
+  }
+  #opTable tbody tr:first-child td{
+    border-top:1px solid #dfe6ee!important;
+  }
+
+  /* Los desplegables de filtros se posicionan por JS como fixed para que
+     no queden recortados por el overflow de la tabla. */
+  #opTable .excel-panel{
+    max-height:min(420px,70vh)!important;
+    overflow:hidden!important;
+    box-shadow:0 14px 36px rgba(15,23,42,.28)!important;
+  }
+  #opTable .excel-panel .multi-list{
+    max-height:min(330px,55vh)!important;
+    overflow:auto!important;
+  }
+}
+
+/* Antigüedad de tarea según horas exactas desde CreadoExacto:
+   <24 blanco | 24-48 verde | 48-72 amarillo | >=72 rosa. */
+.created-white,.age-white{
+  background:#fff!important;
+  color:#17263a!important;
+}
+.created-green,.age-green{
+  background:#c6efce!important;
+  color:#007d51!important;
+}
+.created-yellow,.age-yellow{
+  background:#ffeb9c!important;
+  color:#8a6400!important;
+}
+.created-old,.age-red{
+  background:#ffc7ce!important;
+  color:#9c0006!important;
+}
+
+/* KPI 24-48 usa el mismo verde de antigüedad. */
+.kpi.age-green{background:#c6efce!important}
+
+/* Capturas/preview: soportar también el tramo blanco y 24-48 verde. */
+.export-capture-preview td.created-white,
+.export-capture-preview td.age-white{background:#fff!important;color:#17263a!important;font-weight:700}
+.excel-kpi-grid{grid-template-columns:repeat(8,1fr)!important}
+.excel-kpi-grid.second{grid-template-columns:repeat(7,1fr)!important}
+
+/* =========================================================
+   V22.39 - filtros portal + validación histórica >48h + UI
+   ========================================================= */
+/* Los desplegables de columnas viven en document.body: nunca quedan cortados
+   ni desplazan/tapan la tabla por el sticky/overflow. */
+.excel-filter-portal{
+  position:fixed!important;
+  margin:0!important;
+  width:310px;
+  max-width:calc(100vw - 16px)!important;
+  background:#fff!important;
+  border:1px solid #cbd5e1!important;
+  border-radius:9px!important;
+  box-shadow:0 16px 42px rgba(15,23,42,.28)!important;
+  padding:8px!important;
+  z-index:10000!important;
+  overflow:hidden!important;
+}
+.excel-filter-portal .multi-list{max-height:min(330px,55vh)!important;overflow:auto!important}
+.excel-filter-portal .multi-option{background:#fff}
+.excel-filter-portal .multi-option:hover{background:#f3f6f9}
+
+/* Header actions: misma altura, radio, tipografía y centrado. */
+.head-actions>#btnExportTasks,
+.head-actions>#btnExportExcel,
+.head-actions>.column-chooser>summary{
+  height:30px!important;
+  min-height:30px!important;
+  padding:0 12px!important;
+  border-radius:8px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  line-height:1!important;
+  font-size:9px!important;
+  font-weight:900!important;
+  white-space:nowrap!important;
+}
+.head-actions>.column-chooser>summary{min-width:72px!important}
+.head-actions>#btnExportTasks{min-width:55px!important}
+.head-actions>#btnExportExcel{min-width:118px!important}
+
+/* Descarga completa de ayer/hoy. */
+.daily-state-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:8px}
+.daily-all-btn{height:29px!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#eef4fb!important;color:#27425f!important;font-weight:900!important}
+
+/* Tipificaciones críticas. */
+#opTable td.tipif-alert,.export-capture-preview td.tipif-alert{background:#ffc7ce!important;color:#9c0006!important;font-weight:950!important}
+
+
+/* =========================================================
+   V22.40 - colores Capa/Origen + duplicados Nodo/Padre
+   ========================================================= */
+#opTable td.origin-cell.externo,
+.export-capture-preview td.origin-cell.externo{
+  background:#ffc2ca!important;
+  color:#9c0006!important;
+}
+#opTable td.origin-cell.cliente,
+.export-capture-preview td.origin-cell.cliente{
+  background:#fff!important;
+  color:#17263a!important;
+}
+#opTable td.duplicate-green,
+.export-capture-preview td.duplicate-green{
+  background:#c6efce!important;
+  color:#007d51!important;
+  font-weight:900!important;
+}
+/* Colores de capa según referencia */
+#opTable td.capa-cell.edificio,.export-capture-preview td.capa-cell.edificio{background:#d9eafa!important}
+#opTable td.capa-cell.infra,.export-capture-preview td.capa-cell.infra{background:#ffc2ca!important}
+#opTable td.capa-cell.fibra,.export-capture-preview td.capa-cell.fibra{background:#ffe69a!important}
+#opTable td.capa-cell.usac,.export-capture-preview td.capa-cell.usac{background:#d8efd0!important}
+
+/* V22.43 — filtros de tabla uniformes y siempre hacia abajo */
+.excel-filter-portal{
+  font-size:11px!important;
+  line-height:1.25!important;
+  overflow:hidden!important;
+}
+.excel-filter-portal .multi-tools{
+  grid-template-columns:minmax(0,1fr) auto auto!important;
+  align-items:center!important;
+}
+.excel-filter-portal .multi-tools input{
+  height:34px!important;
+  min-height:34px!important;
+  font-size:11px!important;
+  line-height:1.2!important;
+  padding:0 9px!important;
+}
+.excel-filter-portal .multi-tools button{
+  height:34px!important;
+  min-height:34px!important;
+  font-size:11px!important;
+  line-height:1!important;
+  padding:0 10px!important;
+}
+.excel-filter-portal .multi-tools .multi-close{
+  width:34px!important;
+  min-width:34px!important;
+  height:34px!important;
+  font-size:17px!important;
+  padding:0!important;
+}
+.excel-filter-portal .multi-list{
+  max-height:min(330px,calc(100vh - 150px))!important;
+  overflow:auto!important;
+}
+.excel-filter-portal .multi-option{
+  min-height:34px!important;
+  padding:5px 7px!important;
+  font-size:11px!important;
+  line-height:1.25!important;
+  grid-template-columns:24px minmax(0,1fr)!important;
+}
+.excel-filter-portal .multi-option input{
+  width:16px!important;
+  height:16px!important;
+}
+.excel-filter-portal .multi-option span{
+  font-size:11px!important;
+  line-height:1.25!important;
+}
+.excel-filter-portal .multi-empty{
+  font-size:11px!important;
+}
+
+
+/* V22.48 — Subcapa cromática + filtro por color + Origen Preventivo */
+#opTable td.subcapa-cell.edificio,.export-capture-preview td.subcapa-cell.edificio{background:#d9eafa!important}
+#opTable td.subcapa-cell.infra,.export-capture-preview td.subcapa-cell.infra{background:#ffc2ca!important}
+#opTable td.subcapa-cell.fibra,.export-capture-preview td.subcapa-cell.fibra{background:#ffe69a!important}
+#opTable td.subcapa-cell.usac,.export-capture-preview td.subcapa-cell.usac{background:#d8efd0!important}
+#opTable td.subcapa-cell.ingress,.export-capture-preview td.subcapa-cell.ingress,
+#opTable td.subcapa-cell.leak,.export-capture-preview td.subcapa-cell.leak{background:#eadcff!important}
+
+#opTable td.origin-cell.preventivo,.export-capture-preview td.origin-cell.preventivo{
+  background:#c6efce!important;color:#007d51!important;font-weight:900!important
+}
+
+.color-filter-box{border-bottom:1px solid #e2e8f0;margin:0 0 6px;padding:1px 0 7px}
+.color-filter-title{font-size:10px;font-weight:900;color:#64748b;text-transform:uppercase;margin:2px 0 5px}
+.color-filter-options{display:flex;flex-wrap:wrap;gap:5px}
+.color-filter-chip{display:inline-flex;align-items:center;gap:5px;min-height:28px;border:1px solid #d7e0e9;background:#fff;color:#334155;border-radius:6px;padding:3px 7px;font-size:10px;font-weight:800;cursor:pointer}
+.color-filter-chip:hover{background:#f8fafc}
+.color-filter-chip.active{border-color:#2563eb;box-shadow:0 0 0 1px #2563eb inset;background:#eff6ff}
+.color-swatch,.filter-value-swatch{display:inline-block;flex:0 0 auto;width:15px;height:15px;border:1px solid #aeb9c5;border-radius:3px}
+.clear-swatch{display:grid;place-items:center;background:#fff;color:#64748b;font-size:11px;line-height:1}
+.excel-filter-portal .multi-option{display:grid!important;grid-template-columns:20px 16px minmax(0,1fr)!important;gap:6px!important}
+.excel-filter-portal .multi-option:not(:has(.filter-value-swatch)){grid-template-columns:20px minmax(0,1fr)!important}
